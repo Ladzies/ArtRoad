@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+:root {
+	--color-vegi-10: #014d40;
+	--color-vegi-9: #0c6b58;
+	--color-vegi-8: #147d64;
+	--color-vegi-7: #199473;
+	--color-vegi-6: #27ab83;
+	--color-vegi-5: #3ebd93;
+	--color-vegi-4: #65d6ad;
+	--color-vegi-3: #8eedc7;
+	--color-vegi-2: #c6f7e2;
+	--color-vegi-1: #effcf6;
+
+	--color-metal-10: #1f2c33;
+	--color-metal-9: #2f424c;
+	--color-metal-8: #3e5765;
+	--color-metal-7: #4e6d7e;
+	--color-metal-6: #5d8398;
+	--color-metal-5: #7497aa;
+	--color-metal-4: #8daab9;
+	--color-metal-3: #a6bdc9;
+	--color-metal-2: #c0d0d8;
+	--color-metal-1: #d9e3e8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+	font-family: 'Inter', -apple-system, sans-serif;
+	color: var(--color-metal-10);
 }
