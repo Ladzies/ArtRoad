@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProductDetails() {
+function UI_PRODUCT_DETAILS() {
 	return (
 		<div>
 			<h1>Hello from Popup</h1>
@@ -8,4 +8,4 @@ function ProductDetails() {
 	)
 }
 
-export default ProductDetails
+export default UI_PRODUCT_DETAILS

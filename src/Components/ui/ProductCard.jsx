@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProductCard() {
+function UI_PRODUCT_CARD() {
 	return (
 		<div>
 			<h1>Hello from Product</h1>
@@ -8,4 +8,4 @@ function ProductCard() {
 	)
 }
 
-export default ProductCard
+export default UI_PRODUCT_CARD

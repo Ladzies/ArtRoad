@@ -1,3 +1,6 @@
+import {createGlobalStyle} from 'styled-components'
+
+export const S_GLOBAL = createGlobalStyle`
 :root {
 	--color-vegi-10: #014d40;
 	--color-vegi-9: #0c6b58;
@@ -26,3 +29,5 @@ body {
 	font-family: 'Inter', -apple-system, sans-serif;
 	color: var(--color-metal-10);
 }
+
+`

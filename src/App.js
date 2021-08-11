@@ -1,19 +1,24 @@
-import './App.css'
 import {Switch, Route} from 'react-router'
 import React from 'react'
-import Navbar from './Components/ui/Navbar'
-import ProductList from './Components/ui/ProductList'
-import ProductDetails from './Components/ui/ProductDetails'
-import Cart from './Components/ui/Cart'
+
+import UI_NAVBAR from './Components/ui/Navbar'
+import UI_PRODUCT_LIST from './Components/ui/ProductList'
+import UI_PRODUCT_DETAILS from './Components/ui/ProductDetails'
+import UI_NOT_FOUND from './Components/ui/NotFound'
+import UI_CART from './Components/ui/Cart'
 
 function App() {
 	return (
 		<React.Fragment>
-			<Navbar />
+			<UI_NAVBAR />
 			<Switch>
-				<Route exact path='/' component={ProductList} />
-				<Route path='/details' component={ProductDetails} />
-				<Route path='/cart' component={Cart} />
+				<Route exact path='/' component={UI_PRODUCT_LIST} />
+				<Route
+					path='/details'
+					component={UI_PRODUCT_DETAILS}
+				/>
+				<Route path='/cart' component={UI_CART} />
+				<Route component={UI_NOT_FOUND} />
 			</Switch>
 		</React.Fragment>
 	)

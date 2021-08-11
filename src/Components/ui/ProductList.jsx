@@ -1,12 +1,21 @@
-import React from 'react'
-import ProductCard from './ProductCard'
+import React, {useState} from 'react'
+import {digitalProducts} from '../../data'
+import UI_PRODUCT_CARD from './ProductCard'
 
-function ProductList() {
+function UI_PRODUCT_LIST() {
+	const [products, setProducts] = useState(digitalProducts)
+	console.log(products)
+
 	return (
 		<div>
-			<ProductCard />
+			{products.map((product, index) => (
+				<div key={index}>
+					<div>{product.title}</div>
+				</div>
+			))}
+			<UI_PRODUCT_CARD />
 		</div>
 	)
 }
 
-export default ProductList
+export default UI_PRODUCT_LIST

@@ -1,0 +1,78 @@
+export const digitalProducts = [
+	{
+		id: 1,
+		title:
+			'Sculpting The Planes of the Head | In-Depth Tutorial',
+		img: 'img/image-1.jpg',
+		price: 12,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+	{
+		id: 2,
+		title: 'Zbrush Stylized Beginners Tutorial',
+		img: 'img/image-2.jpg',
+		price: 15,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+	{
+		id: 3,
+		title:
+			'Texturing Realistic Leather in Substance Painter Mini Course',
+		img: 'img/image-3.jpg',
+		price: 2,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+	{
+		id: 4,
+		title:
+			'Exterior environment - Modeling | Texturing | Rendering',
+		img: 'img/image-4.jpg',
+		price: 4,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+	{
+		id: 5,
+		title:
+			'Sculpting, Skin Texturing, Shading In Mari and Arnold',
+		img: 'img/image-5.jpg',
+		price: 12,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+	{
+		id: 6,
+		title: 'Sculpting a realistic head in Zbrush',
+		img: 'img/image-6.jpg',
+		price: 15,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+	{
+		id: 7,
+		title: 'Hard Surgace Modelling in Houdini',
+		img: 'img/image-7.jpg',
+		price: 6,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+	{
+		id: 8,
+		title: 'Rendering in ZBrush',
+		img: 'img/image-8.jpg',
+		price: 6,
+		inCart: false,
+		count: 0,
+		total: 0,
+	},
+]

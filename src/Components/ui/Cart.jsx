@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Cart() {
+function UI_CART() {
 	return (
 		<div>
 			<h1>Hello from Cart</h1>
@@ -8,4 +8,4 @@ function Cart() {
 	)
 }
 
-export default Cart
+export default UI_CART
