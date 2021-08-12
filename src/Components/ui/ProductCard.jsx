@@ -1,11 +1,11 @@
-import React from 'react'
+// import React from 'react'
+// import {Link} from 'react-router-dom'
+// import styled from 'styled-components'
 
-function UI_PRODUCT_CARD() {
-	return (
-		<div>
-			<h1>Hello from Product</h1>
-		</div>
-	)
-}
+// function UI_PRODUCT_CARD() {
+// 	return (
 
-export default UI_PRODUCT_CARD
+// 	)
+// }
+
+// export default UI_PRODUCT_CARD
