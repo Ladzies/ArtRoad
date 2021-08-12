@@ -32,7 +32,7 @@ const NavBar = styled.div`
 	main {
 		display: flex;
 		padding: 20px 20px;
-		max-width: 1440px;
+		max-width: 1340px;
 		margin: auto;
 		justify-content: space-between;
 		align-items: center;

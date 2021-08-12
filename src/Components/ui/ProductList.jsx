@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import {ProductContext} from '../../context'
 import UI_PRODUCT_CARD from './ProductCard'
 import styled from 'styled-components'
-import {keyframes} from 'styled-components'
+import {Link} from 'react-router-dom'
 
 function UI_PRODUCT_LIST() {
 	const product = useContext(ProductContext)
@@ -10,23 +10,26 @@ function UI_PRODUCT_LIST() {
 	return (
 		<ProductGrid>
 			{product.map((product, index) => (
-				<ProductGridItem key={index}>
-					<ProductThumbnail>
-						<img src={product.img} />
-						<div className='btn'>View</div>
-					</ProductThumbnail>
+				<Link to='/details'>
+					<ProductGridItem key={index}>
+						<ProductThumbnail>
+							<img src={product.img} />
 
-					<main>
-						<header>
-							<h1>{product.title}</h1>
-						</header>
+							<div className='btn'>View</div>
+						</ProductThumbnail>
 
-						<footer>
-							<h2>{product.id}</h2>
-							<h1>${product.price}</h1>
-						</footer>
-					</main>
-				</ProductGridItem>
+						<ProductContent>
+							<header>
+								<h1>{product.title}</h1>
+							</header>
+
+							<footer>
+								<div></div>
+								<span>${product.price}</span>
+							</footer>
+						</ProductContent>
+					</ProductGridItem>
+				</Link>
 			))}
 		</ProductGrid>
 	)
@@ -60,43 +63,22 @@ const ProductGridItem = styled.div`
 	}
 
 	.btn {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		opacity: 0;
-		transition: opacity 200ms;
 		background-color: var(--color-metal-1);
-		transform: translate(-50%, -50%);
-		padding: 10px 22px;
 		border-radius: 5px;
-		font-weight: 600;
+		border: 2px solid var(--color-metal-1);
 		color: var(--color-metal-6);
-		border: 0;
-	}
+		font-weight: 600;
+		left: 50%;
+		opacity: 0;
+		padding: 10px 22px;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: opacity 200ms;
 
-	main {
-		padding: 15px 20px 15px 20px;
-	}
-
-	header {
-		height: 50px;
-		h1 {
-			overflow: hidden;
-			display: -webkit-box;
-			-webkit-box-orient: vertical;
-			-webkit-line-clamp: 2;
-			font-size: 18px;
-			line-height: 24px;
-			font-weight: 500;
-		}
-	}
-
-	footer {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		h1 {
-			font-weight: 500;
+		:hover {
+			background-color: var(--color-metal-2);
+			color: var(--color-metal-7);
 		}
 	}
 `
@@ -125,4 +107,30 @@ const ProductThumbnail = styled.div`
 	}
 `
 
-const ProductThumbnailButton = styled.div``
+const ProductContent = styled.div`
+	padding: 15px 20px 15px 20px;
+
+	header {
+		height: 50px;
+		margin-bottom: 10px;
+		h1 {
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 500;
+		}
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span {
+			font-size: 30px;
+			font-weight: 600;
+		}
+	}
+`
