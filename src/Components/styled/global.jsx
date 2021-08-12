@@ -26,8 +26,16 @@ export const S_GLOBAL = createGlobalStyle`
 }
 
 body {
-	font-family: 'Inter', -apple-system, sans-serif;
+	font-family: -apple-system, 'Inter', sans-serif;
 	color: var(--color-metal-10);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0
+}
+
+a{
+	text-decoration: none;
 }
 
 `
