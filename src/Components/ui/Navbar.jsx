@@ -3,32 +3,32 @@ import {Link} from 'react-router-dom'
 import logo from '../../logo.svg'
 import styled from 'styled-components'
 
-function UI_NAVBAR() {
+export default function Navbar() {
 	return (
 		<div>
-			<NavBar>
+			<SNavbar>
 				<main>
 					<Link to='/'>
 						<img src={logo} alt='' />
 					</Link>
 
 					<Link to='/cart'>
-						<AddToCart>
+						<SAddToCart>
 							<IconBasket
 								width={30}
 								height={30}
 								fill={'var(--color-metal-6)'}
 							/>
 							0
-						</AddToCart>
+						</SAddToCart>
 					</Link>
 				</main>
-			</NavBar>
+			</SNavbar>
 		</div>
 	)
 }
 
-const NavBar = styled.div`
+const SNavbar = styled.div`
 	main {
 		display: flex;
 		padding: 20px 20px;
@@ -39,7 +39,7 @@ const NavBar = styled.div`
 	}
 `
 
-const AddToCart = styled.div`
+const SAddToCart = styled.div`
 	align-items: center;
 	background-color: var(--color-metal-1);
 	border-radius: 50px;
@@ -72,5 +72,3 @@ const IconBasket = props => {
 		</svg>
 	)
 }
-
-export default UI_NAVBAR

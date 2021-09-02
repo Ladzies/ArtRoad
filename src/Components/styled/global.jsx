@@ -25,9 +25,13 @@ export const S_GLOBAL = createGlobalStyle`
 	--color-metal-1: #d9e3e8;
 }
 
+
+
 body {
 	font-family: -apple-system, 'Inter', sans-serif;
 	color: var(--color-metal-10);
+
+	
 }
 
 h1,h2,h3,h4,h5,h6 {

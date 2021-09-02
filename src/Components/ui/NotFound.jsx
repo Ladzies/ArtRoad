@@ -1,11 +1,9 @@
 import React from 'react'
 
-function UI_NOT_FOUND() {
+export default function NotFound() {
 	return (
 		<div>
 			<h1>Hello from Not Found</h1>
 		</div>
 	)
 }
-
-export default UI_NOT_FOUND

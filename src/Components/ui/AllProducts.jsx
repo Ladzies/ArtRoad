@@ -1,10 +1,9 @@
 import React, {useContext} from 'react'
 import {ProductContext} from '../../context'
-import UI_PRODUCT_CARD from './ProductCard'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
-function UI_PRODUCT_LIST() {
+export default function AllProducts() {
 	const product = useContext(ProductContext)
 
 	return (
@@ -13,7 +12,7 @@ function UI_PRODUCT_LIST() {
 				<Link to='/details'>
 					<ProductGridItem key={index}>
 						<ProductThumbnail>
-							<img src={product.img} />
+							<img src={product.img} alt='' />
 
 							<div className='btn'>View</div>
 						</ProductThumbnail>
@@ -34,8 +33,6 @@ function UI_PRODUCT_LIST() {
 		</ProductGrid>
 	)
 }
-
-export default UI_PRODUCT_LIST
 
 const ProductGrid = styled.div`
 	display: grid;

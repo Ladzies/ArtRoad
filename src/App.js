@@ -1,24 +1,23 @@
+// Dependencies
 import {Switch, Route} from 'react-router'
 import React from 'react'
 
-import UI_NAVBAR from './Components/ui/Navbar'
-import UI_PRODUCT_LIST from './Components/ui/ProductList'
-import UI_PRODUCT_DETAILS from './Components/ui/ProductDetails'
-import UI_NOT_FOUND from './Components/ui/NotFound'
-import UI_CART from './Components/ui/Cart'
+// Components
+import Navbar from './Components/ui/Navbar'
+import AllProducts from './Components/ui/AllProducts'
+import ProductDetails from './Components/ui/ProductDetails'
+import NotFound from './Components/ui/NotFound'
+import Cart from './Components/ui/Cart'
 
 function App() {
 	return (
 		<React.Fragment>
-			<UI_NAVBAR />
+			<Navbar />
 			<Switch>
-				<Route exact path='/' component={UI_PRODUCT_LIST} />
-				<Route
-					path='/details'
-					component={UI_PRODUCT_DETAILS}
-				/>
-				<Route path='/cart' component={UI_CART} />
-				<Route component={UI_NOT_FOUND} />
+				<Route exact path='/' component={AllProducts} />
+				<Route path='/details' component={ProductDetails} />
+				<Route path='/cart' component={Cart} />
+				<Route component={NotFound} />
 			</Switch>
 		</React.Fragment>
 	)
