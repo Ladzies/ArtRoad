@@ -1,4 +1,4 @@
-# ArtRoad allows creators to make a real living by selling digital products.
+# An art marketplace app that allows creators to make a living by their digital art.
 
 ## MVP Features:
 
