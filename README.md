@@ -1,5 +1,5 @@
 # ArtRoad
-An art marketplace app that allows creators to make a living by their digital art.
+An art marketplace app that allows creators to sell their digital art and assets.
 
 ## Design Preview
 ![CleanShot 2022-01-06 at 14 38 02@2x](https://user-images.githubusercontent.com/34932547/148462221-df788302-df67-486f-990f-6d3b58829cbf.jpg)
